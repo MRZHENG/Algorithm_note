@@ -1,0 +1,28 @@
+## 插入排序，摸牌排序
+
+#### 时间复杂度为（N方）
+
+
+
+```c++
+void swap(int &a,int &b){
+    int temp= a;
+    a=b;
+    b=temp;
+}
+//想想成摸牌
+void insertSort(vector<int>nums,int size){
+    if(size==1)
+        return ;
+    for(int i=1;i<size;i++){
+        //只有当出现小的时采取向前面换
+        for(int j = i; j>0&&nums[j]<nums[j-1];j--){
+            swap(nums[j-1],nums[j]);
+        }
+    }
+}
+
+
+
+```
+

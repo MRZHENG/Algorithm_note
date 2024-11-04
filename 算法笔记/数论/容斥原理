@@ -1,0 +1,14 @@
+### 容斥原理
+
+![28E152AD48B7AE1FC9D82062CF1A207D](C:\Users\Administrator\Downloads/28E152AD48B7AE1FC9D82062CF1A207D.png)
+
+![image-20240911112000009](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240911112000009.png)
+
+![image-20240911112619569](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240911112619569.png)
+
+**理解：从n个中选一个，到从n个中选n个的方案数 等于 从n个数选i个 的方案 **
+$$
+[
+|A_1 \cup A_2 \cup \cdots \cup A_n| = \sum_{i=1}^{n} |A_i| - \sum_{1 \leq i < j \leq n} |A_i \cap A_j| + \sum_{1 \leq i < j < k \leq n} |A_i \cap A_j \cap A_k| - \cdots + (-1)^{n+1} |A_1 \cap A_2 \cap \cdots \cap A_n|
+]
+$$
